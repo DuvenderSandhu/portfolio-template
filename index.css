@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --primary:#129638;
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin: 2rem 5rem;
+    justify-content: space-around;
+    position: sticky;
+    top:0px;
+
+}
+
+.nav div{
+    display: flex;
+    gap:1rem;
+}
+.nav div p{
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+.nav div p:hover{
+    color: var(--primary);
+}
+
+
+.main{
+    height: 84vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img,.heading{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+}
+.img{
+    align-items:flex-end;
+    
+}
+
+.img img{
+    height: 400px;
+    border-radius: 300px;
+    overflow: hidden;
+    transform: rotate(40deg);
+    filter: blur(0.5rem);
+}
+.subheading{
+    color: var(--primary);
+    font-size: 2rem;
+}
+.mainheading{
+    font-size: 2.5rem;
+}
+
+.styledpara{
+    font-size: 1.3rem;
+    color: var(--primary);
+}
+
+.btn{
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.a{
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.a:hover{
+    background-color: var(--primary);
+    border: 1px solid white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.b{
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+}
+
+.b:hover{
+    background-color: white;
+    border: 1px solid var(--primary);
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
